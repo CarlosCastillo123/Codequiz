@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Creating starting page-->
+    <nav>
+    <div class="timer">Time: <span id="time">0</span></div>
+    
+    <div class="highscores">
+        <h3><a href="./highscores.html">High scores</a></h3>
+    </div>
+</nav>
+
+
+   
+    
+    <div id="start-screen" class="start">
+        <h1>Would You like to take a coding quiz?</h1>
+        <h2>
+            In this quiz yout JavaScript knowledge will be put
+            to the test. Click the start quiz button if your ready.
+        </h2>
+        <button id="start">Start quiz</button>
+
+    </div>
+
+
+    <div class="hide" id='questions'>
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+    </div>
+
+    <!--Start button-->
+
+    <div id="end-screen" class="hide">
+        <h2>Times UP</h2>
+        <p>final score <span id="final-score"></span>.</p>
+        <p>
+            Enter initials <input type="text" id="initials" max="3" />
+            <button id="submit">Submit</button>
+        </p>
+    </div>
+
+    <div id="feedback" class="feedback hide"></div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
